@@ -1,0 +1,132 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-16 15:41:58.898829",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "device_name",
+  "com_port",
+  "baud_rate",
+  "flow_control",
+  "parity",
+  "column_break_culu1",
+  "data_bit",
+  "stop_bit",
+  "polling_time",
+  "time_out",
+  "no_of_retries",
+  "section_break_qwdzu",
+  "rtu_table",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "device_name",
+   "fieldtype": "Data",
+   "label": "Device Name"
+  },
+  {
+   "fieldname": "com_port",
+   "fieldtype": "Data",
+   "label": "Com port"
+  },
+  {
+   "fieldname": "baud_rate",
+   "fieldtype": "Select",
+   "label": "Baud Rate",
+   "options": "9600\n19200\n38400\n57600\n115200\n230400"
+  },
+  {
+   "fieldname": "flow_control",
+   "fieldtype": "Select",
+   "label": "Flow Control",
+   "options": "None"
+  },
+  {
+   "fieldname": "parity",
+   "fieldtype": "Select",
+   "label": "Parity",
+   "options": "None\nOdd\nEven"
+  },
+  {
+   "fieldname": "data_bit",
+   "fieldtype": "Select",
+   "label": "Data Bit",
+   "options": "8\n7\n6\n5\n4"
+  },
+  {
+   "fieldname": "stop_bit",
+   "fieldtype": "Select",
+   "label": "Stop Bit",
+   "options": "1\n1.5\n2"
+  },
+  {
+   "fieldname": "polling_time",
+   "fieldtype": "Data",
+   "label": "Polling Time(ms)"
+  },
+  {
+   "fieldname": "time_out",
+   "fieldtype": "Data",
+   "label": "Time Out(ms)"
+  },
+  {
+   "fieldname": "rtu_table",
+   "fieldtype": "Table",
+   "label": "RTU Slave",
+   "options": "RTU Slave"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Modbus RTU Device",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  },
+  {
+   "fieldname": "column_break_culu1",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "section_break_qwdzu",
+   "fieldtype": "Section Break"
+  },
+  {
+   "fieldname": "no_of_retries",
+   "fieldtype": "Data",
+   "label": "No of Retries"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-24 12:20:04.017002",
+ "modified_by": "Administrator",
+ "module": "RestAPI",
+ "name": "Modbus RTU Device",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

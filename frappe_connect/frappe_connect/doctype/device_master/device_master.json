@@ -1,0 +1,97 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-17 13:39:29.420341",
+ "default_view": "List",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "ip_address",
+  "port_number",
+  "ping",
+  "username",
+  "password",
+  "upload",
+  "download",
+  "column_break_hzbmn",
+  "amended_from"
+ ],
+ "fields": [
+  {
+   "fieldname": "ip_address",
+   "fieldtype": "Data",
+   "label": "IP Address"
+  },
+  {
+   "fieldname": "port_number",
+   "fieldtype": "Data",
+   "label": "Port Number"
+  },
+  {
+   "fieldname": "ping",
+   "fieldtype": "Button",
+   "label": "Ping"
+  },
+  {
+   "fieldname": "column_break_hzbmn",
+   "fieldtype": "Column Break"
+  },
+  {
+   "fieldname": "username",
+   "fieldtype": "Data",
+   "label": "Username"
+  },
+  {
+   "fieldname": "password",
+   "fieldtype": "Data",
+   "label": "Password"
+  },
+  {
+   "fieldname": "upload",
+   "fieldtype": "Button",
+   "label": " Upload  Configuration Data"
+  },
+  {
+   "fieldname": "download",
+   "fieldtype": "Button",
+   "label": "Download Configuration Data"
+  },
+  {
+   "fieldname": "amended_from",
+   "fieldtype": "Link",
+   "label": "Amended From",
+   "no_copy": 1,
+   "options": "Device Master",
+   "print_hide": 1,
+   "read_only": 1,
+   "search_index": 1
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "is_submittable": 1,
+ "links": [],
+ "modified": "2024-09-17 18:12:12.799263",
+ "modified_by": "Administrator",
+ "module": "RestAPI",
+ "name": "Device Master",
+ "owner": "Administrator",
+ "permissions": [
+  {
+   "create": 1,
+   "delete": 1,
+   "email": 1,
+   "export": 1,
+   "print": 1,
+   "read": 1,
+   "report": 1,
+   "role": "System Manager",
+   "share": 1,
+   "write": 1
+  }
+ ],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": [],
+ "track_changes": 1
+}

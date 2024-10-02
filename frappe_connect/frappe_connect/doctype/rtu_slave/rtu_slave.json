@@ -1,0 +1,88 @@
+{
+ "actions": [],
+ "allow_rename": 1,
+ "creation": "2024-09-16 15:41:54.198678",
+ "doctype": "DocType",
+ "editable_grid": 1,
+ "engine": "InnoDB",
+ "field_order": [
+  "slave_device_name",
+  "slave_id",
+  "starting_address",
+  "function_code",
+  "datatype",
+  "length",
+  "data_format",
+  "tag_name",
+  "description",
+  "event_report"
+ ],
+ "fields": [
+  {
+   "fieldname": "slave_device_name",
+   "fieldtype": "Data",
+   "label": "Slave Device Name"
+  },
+  {
+   "fieldname": "slave_id",
+   "fieldtype": "Data",
+   "label": "Slave ID"
+  },
+  {
+   "fieldname": "starting_address",
+   "fieldtype": "Data",
+   "label": "Starting Address"
+  },
+  {
+   "fieldname": "function_code",
+   "fieldtype": "Select",
+   "label": "Function Code",
+   "options": "Read Coil Status\nRead Discrete Input\nRead Holding Register\nRead Input Register\nWrite Single Coil\nWrite Single Register\nWrite Multiple Coils\nWrite Multiple Registers"
+  },
+  {
+   "fieldname": "datatype",
+   "fieldtype": "Select",
+   "label": "Datatype",
+   "options": "boolean\nbyte\nint\nshort int\nlong\nunsigned int\nunsigned short\nunsigned long\nfloat32\nfloat64"
+  },
+  {
+   "fieldname": "length",
+   "fieldtype": "Data",
+   "label": "Length"
+  },
+  {
+   "fieldname": "data_format",
+   "fieldtype": "Select",
+   "label": "Data Format",
+   "options": "Byte Swap\nWord Swap\nIEEE-754 Floating Point\nBig Endian"
+  },
+  {
+   "fieldname": "tag_name",
+   "fieldtype": "Data",
+   "label": "Tag Name"
+  },
+  {
+   "fieldname": "description",
+   "fieldtype": "Data",
+   "label": "Description"
+  },
+  {
+   "fieldname": "event_report",
+   "fieldtype": "Select",
+   "label": "Event Report",
+   "options": "Enable\nDisable"
+  }
+ ],
+ "index_web_pages_for_search": 1,
+ "istable": 1,
+ "links": [],
+ "modified": "2024-09-24 12:10:06.079642",
+ "modified_by": "Administrator",
+ "module": "RestAPI",
+ "name": "RTU Slave",
+ "owner": "Administrator",
+ "permissions": [],
+ "sort_field": "modified",
+ "sort_order": "DESC",
+ "states": []
+}
